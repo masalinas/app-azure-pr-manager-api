@@ -214,7 +214,7 @@ class AppComponent {
         this.getUsers();
     }
     getUsers() {
-        this.users.push({ name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "Ainara Arizaga Beistegi" });
+        this.users.push({ name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "aarizaga@bilbomatica.es" }, { name: "Carlos  Rodríguez", username: "carlos.rodriguez@gloin.es" });
     }
     onUserChange(user) {
         this.loading = true;
