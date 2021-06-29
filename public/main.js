@@ -212,13 +212,20 @@ class AppComponent {
         this.users = [];
         this.selectedUser = null;
         this.getUsers();
+        this.getPRs();
     }
     getUsers() {
-        this.users.push({ name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "aarizaga@bilbomatica.es" }, { name: "Carlos  Rodríguez", username: "carlos.rodriguez@gloin.es" });
+        this.users.push({ name: "All users", username: "" }, { name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "aarizaga@bilbomatica.es" }, { name: "Carlos  Rodríguez", username: "carlos.rodriguez@gloin.es" });
     }
     onUserChange(user) {
+        this.getPRs(user);
+    }
+    getPRs(user) {
         this.loading = true;
-        this.poolRequestControllerService.poolRequestControllerFindById(user.username).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((datum) => datum.map((poolRequestWithRelations) => {
+        let username;
+        if (user)
+            username = user.username;
+        this.poolRequestControllerService.poolRequestControllerFindById(username).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((datum) => datum.map((poolRequestWithRelations) => {
             if (poolRequestWithRelations.closedDate != undefined)
                 poolRequestWithRelations.closedDate = new Date(poolRequestWithRelations.closedDate);
             if (poolRequestWithRelations.targetRefName != undefined) {
@@ -233,7 +240,6 @@ class AppComponent {
         }))).subscribe((poolRequestWithRelationss) => {
             this.poolRequestWithRelationss = poolRequestWithRelationss;
             this.loading = false;
-            //console.log(this.poolRequestWithRelationss);
         }, err => {
             console.log(err);
             this.loading = false;
@@ -241,7 +247,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_shared_backend_api_poolRequestController_service__WEBPACK_IMPORTED_MODULE_2__["PoolRequestControllerService"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 9, vars: 9, consts: [[1, "p-d-flex", 2, "width", "600px"], [1, "p-col"], ["id", "user", "optionLabel", "name", 3, "options", "ngModel", "ngModelChange", "onChange"], ["currentPageReportTemplate", "Showing {first} to {last} of {totalRecords} entries", "styleClass", "p-datatable-customers p-datatable-gridlines", 3, "value", "rows", "showCurrentPageReport", "rowsPerPageOptions", "loading", "paginator"], ["dtPR", ""], ["pTemplate", "header"], ["pTemplate", "body"], [1, "p-d-flex", "p-jc-between", "p-ai-center"], ["type", "text", "field", "createdBy", "display", "menu"], ["type", "text", "field", "title", "display", "menu"], ["type", "text", "field", "repository", "display", "menu"], ["type", "text", "field", "sourceRefName", "display", "menu"], ["type", "text", "field", "targetRefName", "display", "menu"], ["type", "date", "field", "closedDate", "display", "menu"], ["type", "text", "field", "status", "display", "menu"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 9, vars: 10, consts: [[1, "p-d-flex", 2, "width", "600px"], [1, "p-col"], ["id", "user", "optionLabel", "name", 3, "showClear", "options", "ngModel", "ngModelChange", "onChange"], ["currentPageReportTemplate", "Showing {first} to {last} of {totalRecords} entries", "styleClass", "p-datatable-customers p-datatable-gridlines", 3, "value", "rows", "showCurrentPageReport", "rowsPerPageOptions", "loading", "paginator"], ["dtPR", ""], ["pTemplate", "header"], ["pTemplate", "body"], [1, "p-d-flex", "p-jc-between", "p-ai-center"], ["type", "text", "field", "createdBy", "display", "menu"], ["type", "text", "field", "title", "display", "menu"], ["type", "text", "field", "repository", "display", "menu"], ["type", "text", "field", "sourceRefName", "display", "menu"], ["type", "text", "field", "targetRefName", "display", "menu"], ["type", "date", "field", "closedDate", "display", "menu"], ["type", "text", "field", "status", "display", "menu"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h1");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Azure Pull Requests List");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -258,9 +264,9 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", ctx.users)("ngModel", ctx.selectedUser);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("showClear", true)("options", ctx.users)("ngModel", ctx.selectedUser);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", ctx.poolRequestWithRelationss)("rows", 10)("showCurrentPageReport", true)("rowsPerPageOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](8, _c0))("loading", ctx.loading)("paginator", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", ctx.poolRequestWithRelationss)("rows", 10)("showCurrentPageReport", true)("rowsPerPageOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](9, _c0))("loading", ctx.loading)("paginator", true);
     } }, directives: [primeng_dropdown__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], primeng_table__WEBPACK_IMPORTED_MODULE_5__["Table"], primeng_api__WEBPACK_IMPORTED_MODULE_6__["PrimeTemplate"], primeng_table__WEBPACK_IMPORTED_MODULE_5__["ColumnFilter"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"] });
 
 
@@ -368,8 +374,9 @@ class PoolRequestControllerService {
         });
     }
     poolRequestControllerFindById(username, observe = 'body', reportProgress = false, options) {
-        if (username === null || username === undefined) {
-            throw new Error('Required parameter username was null or undefined when calling poolRequestControllerFindById.');
+        let queryParameters = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpParams"]({ encoder: this.encoder });
+        if (username !== undefined && username !== null) {
+            queryParameters = this.addToHttpParams(queryParameters, username, 'username');
         }
         let headers = this.defaultHeaders;
         let httpHeaderAcceptSelected = options && options.httpHeaderAccept;
@@ -388,6 +395,7 @@ class PoolRequestControllerService {
             responseType_ = 'text';
         }
         return this.httpClient.get(`${this.configuration.basePath}/prs/${encodeURIComponent(String(username))}`, {
+            params: queryParameters,
             responseType: responseType_,
             withCredentials: this.configuration.withCredentials,
             headers: headers,

@@ -48,9 +48,17 @@ export class PoolRequestController {
       },
     },
   })
-  async findById( @param.path.string('username') username: string): Promise<PoolRequest> {
+  async findById( @param.query.string('username') username?: string): Promise<PoolRequest> {
     return new Promise(function (resolve, reject) {
-      exec('az repos pr list --organization https://dev.azure.com/ECCAIRS2/ --project ECCAIRS2 --creator ' + username + ' --status all --query "@[*].{description:description, closedDate:closedDate, reviewers:reviewers[*].{displayName:displayName}, createdBy:createdBy.uniqueName, title:title, status:status, repository:repository.name, sourceRefName:sourceRefName, targetRefName:targetRefName}" -o json', (error: any, stdout: any, stderr: any) => {
+      let request: string;
+      console.log (username);
+
+      if (username)
+        request = 'az repos pr list --organization https://dev.azure.com/ECCAIRS2/ --project ECCAIRS2 --creator ' + username + ' --status all --query "@[*].{description:description, closedDate:closedDate, reviewers:reviewers[*].{displayName:displayName}, createdBy:createdBy.uniqueName, title:title, status:status, repository:repository.name, sourceRefName:sourceRefName, targetRefName:targetRefName}" -o json'
+      else
+        request = 'az repos pr list --organization https://dev.azure.com/ECCAIRS2/ --project ECCAIRS2 --status all --query "@[*].{description:description, closedDate:closedDate, reviewers:reviewers[*].{displayName:displayName}, createdBy:createdBy.uniqueName, title:title, status:status, repository:repository.name, sourceRefName:sourceRefName, targetRefName:targetRefName}" -o json'
+
+      exec(request, (error: any, stdout: any, stderr: any) => {
         if (error) {
           reject(error);
 
