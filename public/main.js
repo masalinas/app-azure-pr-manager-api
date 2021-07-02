@@ -105,9 +105,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_backend_api_poolRequestController_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/backend/api/poolRequestController.service */ "VGHJ");
 /* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/dropdown */ "arFO");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var primeng_table__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! primeng/table */ "rEr+");
-/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! primeng/api */ "7zfz");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! primeng/button */ "jIHw");
+/* harmony import */ var primeng_table__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! primeng/table */ "rEr+");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! primeng/api */ "7zfz");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -116,53 +117,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function AppComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+
+function AppComponent_ng_template_12_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, " Created By ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "p-columnFilter", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "p-columnFilter", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7, " Title ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "p-columnFilter", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "p-columnFilter", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, " Repository ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "p-columnFilter", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "p-columnFilter", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15, " Source Branch ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](16, "p-columnFilter", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](16, "p-columnFilter", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, " Target Branch ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "p-columnFilter", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "p-columnFilter", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, " Clode Date ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](24, "p-columnFilter", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](24, "p-columnFilter", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, " Status ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "p-columnFilter", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "p-columnFilter", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
-function AppComponent_ng_template_8_Template(rf, ctx) { if (rf & 1) {
+function AppComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
@@ -209,15 +211,28 @@ class AppComponent {
     constructor(poolRequestControllerService) {
         this.poolRequestControllerService = poolRequestControllerService;
         this.title = 'PR List Manager';
+        this.poolRequestWithRelationss = [];
         this.users = [];
         this.selectedUser = null;
+        this.top = 20;
+        this.page = 0;
         this.getUsers();
         this.getPRs();
     }
     getUsers() {
-        this.users.push({ name: "All users", username: "" }, { name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "aarizaga@bilbomatica.es" }, { name: "Carlos  Rodríguez", username: "carlos.rodriguez@gloin.es" });
+        this.users.push({ name: "All users", username: "" }, { name: "Miguel Salinas", username: "masalinas@bilbomatica.es" }, { name: "Daniel Toro", username: "dtoro@bilbomatica.es" }, { name: "Jaime Rivero", username: "jrivero@gloin.es" }, { name: "Fernando Fernández Rivero", username: "ffernandez@gloin.es" }, { name: "Jacob Uribe Ais", username: "juribe@bilbomatica.es" }, { name: "Jose Dávila", username: "jadavila@gloin.es" }, { name: "Jose Jurado", username: "jose.jurado@twtspain.com" }, { name: "Fernando Pulido", username: "fpulido@gloin.es" }, { name: "Ricardo", username: "rflores@gloin.es" }, { name: "Cristian David Franco Garcia ", username: "cdfranco@bilbomatica.es" }, { name: "Ainara Arizaga Beistegi", username: "aarizaga@bilbomatica.es" }, { name: "Carlos Rodríguez", username: "carlos.rodriguez@gloin.es" });
+    }
+    onPreviousPage() {
+        if (this.page > 0)
+            this.page = this.page - 1;
+        this.getPRs();
+    }
+    onNextPage() {
+        this.page = this.page + 1;
+        this.getPRs();
     }
     onUserChange(user) {
+        this.page = 0;
         this.getPRs(user);
     }
     getPRs(user) {
@@ -225,7 +240,8 @@ class AppComponent {
         let username;
         if (user)
             username = user.username;
-        this.poolRequestControllerService.poolRequestControllerFindById(username).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((datum) => datum.map((poolRequestWithRelations) => {
+        this.skip = this.page * this.top;
+        this.poolRequestControllerService.poolRequestControllerFindById(this.skip.toString(), this.top.toString(), username).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((datum) => datum.map((poolRequestWithRelations) => {
             if (poolRequestWithRelations.closedDate != undefined)
                 poolRequestWithRelations.closedDate = new Date(poolRequestWithRelations.closedDate);
             if (poolRequestWithRelations.targetRefName != undefined) {
@@ -247,27 +263,43 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_shared_backend_api_poolRequestController_service__WEBPACK_IMPORTED_MODULE_2__["PoolRequestControllerService"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 9, vars: 10, consts: [[1, "p-d-flex", 2, "width", "600px"], [1, "p-col"], ["id", "user", "optionLabel", "name", 3, "showClear", "options", "ngModel", "ngModelChange", "onChange"], ["currentPageReportTemplate", "Showing {first} to {last} of {totalRecords} entries", "styleClass", "p-datatable-customers p-datatable-gridlines", 3, "value", "rows", "showCurrentPageReport", "rowsPerPageOptions", "loading", "paginator"], ["dtPR", ""], ["pTemplate", "header"], ["pTemplate", "body"], [1, "p-d-flex", "p-jc-between", "p-ai-center"], ["type", "text", "field", "createdBy", "display", "menu"], ["type", "text", "field", "title", "display", "menu"], ["type", "text", "field", "repository", "display", "menu"], ["type", "text", "field", "sourceRefName", "display", "menu"], ["type", "text", "field", "targetRefName", "display", "menu"], ["type", "date", "field", "closedDate", "display", "menu"], ["type", "text", "field", "status", "display", "menu"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 14, vars: 13, consts: [[1, "p-d-flex", "toolbar", 2, "width", "100%"], ["id", "user", "optionLabel", "name", 3, "showClear", "options", "ngModel", "ngModelChange", "onChange"], [1, "p-ml-auto", "page-title"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-angle-left", 1, "previous-page", 3, "disabled", "click"], [1, "page"], ["pButton", "", "pRipple", "", "type", "button", "icon", "pi pi-angle-right", 1, "next-page", 3, "disabled", "click"], ["currentPageReportTemplate", "Showing {first} to {last} of {totalRecords} entries", "styleClass", "p-datatable-customers p-datatable-gridlines", 3, "value", "rows", "showCurrentPageReport", "rowsPerPageOptions", "loading", "paginator"], ["dtPR", ""], ["pTemplate", "header"], ["pTemplate", "body"], [1, "p-d-flex", "p-jc-between", "p-ai-center"], ["type", "text", "field", "createdBy", "display", "menu"], ["type", "text", "field", "title", "display", "menu"], ["type", "text", "field", "repository", "display", "menu"], ["type", "text", "field", "sourceRefName", "display", "menu"], ["type", "text", "field", "targetRefName", "display", "menu"], ["type", "date", "field", "closedDate", "display", "menu"], ["type", "text", "field", "status", "display", "menu"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h1");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Azure Pull Requests List");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "p-dropdown", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_p_dropdown_ngModelChange_4_listener($event) { return ctx.selectedUser = $event; })("onChange", function AppComponent_Template_p_dropdown_onChange_4_listener() { return ctx.onUserChange(ctx.selectedUser); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "p-dropdown", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_p_dropdown_ngModelChange_3_listener($event) { return ctx.selectedUser = $event; })("onChange", function AppComponent_Template_p_dropdown_onChange_3_listener() { return ctx.onUserChange(ctx.selectedUser); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, "P\u00E1gina");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_button_click_6_listener() { return ctx.onPreviousPage(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "button", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AppComponent_Template_button_click_9_listener() { return ctx.onNextPage(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "p-table", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, AppComponent_ng_template_7_Template, 29, 0, "ng-template", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, AppComponent_ng_template_8_Template, 16, 10, "ng-template", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "p-table", 6, 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](12, AppComponent_ng_template_12_Template, 29, 0, "ng-template", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, AppComponent_ng_template_13_Template, 16, 10, "ng-template", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("showClear", true)("options", ctx.users)("ngModel", ctx.selectedUser);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.page === 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.page + 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", ctx.poolRequestWithRelationss)("rows", 10)("showCurrentPageReport", true)("rowsPerPageOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](9, _c0))("loading", ctx.loading)("paginator", true);
-    } }, directives: [primeng_dropdown__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], primeng_table__WEBPACK_IMPORTED_MODULE_5__["Table"], primeng_api__WEBPACK_IMPORTED_MODULE_6__["PrimeTemplate"], primeng_table__WEBPACK_IMPORTED_MODULE_5__["ColumnFilter"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.poolRequestWithRelationss.length < ctx.top);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", ctx.poolRequestWithRelationss)("rows", 10)("showCurrentPageReport", true)("rowsPerPageOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](12, _c0))("loading", ctx.loading)("paginator", true);
+    } }, directives: [primeng_dropdown__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], primeng_button__WEBPACK_IMPORTED_MODULE_5__["ButtonDirective"], primeng_table__WEBPACK_IMPORTED_MODULE_6__["Table"], primeng_api__WEBPACK_IMPORTED_MODULE_7__["PrimeTemplate"], primeng_table__WEBPACK_IMPORTED_MODULE_6__["ColumnFilter"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["DatePipe"]], styles: [".toolbar[_ngcontent-%COMP%] {\n    padding-bottom: 20px;\n}\n\n.page-title[_ngcontent-%COMP%] {\n    align-self: center;\n    margin-right: 10px;\n}\n\n.previous-page[_ngcontent-%COMP%] {\n    margin-right: 10px;\n}\n\n.page[_ngcontent-%COMP%] {\n    align-self: center;\n}\n\n.next-page[_ngcontent-%COMP%] {\n    margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0JBQW9CO0FBQ3hCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50b29sYmFyIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMjBweDtcbn1cblxuLnBhZ2UtdGl0bGUge1xuICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5wcmV2aW91cy1wYWdlIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5wYWdlIHtcbiAgICBhbGlnbi1zZWxmOiBjZW50ZXI7XG59XG5cbi5uZXh0LXBhZ2Uge1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */"] });
 
 
 /***/ }),
@@ -348,33 +380,20 @@ class PoolRequestControllerService {
         }
         return httpParams;
     }
-    poolRequestControllerFind(observe = 'body', reportProgress = false, options) {
-        let headers = this.defaultHeaders;
-        let httpHeaderAcceptSelected = options && options.httpHeaderAccept;
-        if (httpHeaderAcceptSelected === undefined) {
-            // to determine the Accept header
-            const httpHeaderAccepts = [
-                'application/json'
-            ];
-            httpHeaderAcceptSelected = this.configuration.selectHeaderAccept(httpHeaderAccepts);
+    poolRequestControllerFindById(skip, top, username, observe = 'body', reportProgress = false, options) {
+        if (skip === null || skip === undefined) {
+            throw new Error('Required parameter skip was null or undefined when calling poolRequestControllerFindById.');
         }
-        if (httpHeaderAcceptSelected !== undefined) {
-            headers = headers.set('Accept', httpHeaderAcceptSelected);
+        if (top === null || top === undefined) {
+            throw new Error('Required parameter top was null or undefined when calling poolRequestControllerFindById.');
         }
-        let responseType_ = 'json';
-        if (httpHeaderAcceptSelected && httpHeaderAcceptSelected.startsWith('text')) {
-            responseType_ = 'text';
-        }
-        return this.httpClient.get(`${this.configuration.basePath}/prs`, {
-            responseType: responseType_,
-            withCredentials: this.configuration.withCredentials,
-            headers: headers,
-            observe: observe,
-            reportProgress: reportProgress
-        });
-    }
-    poolRequestControllerFindById(username, observe = 'body', reportProgress = false, options) {
         let queryParameters = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpParams"]({ encoder: this.encoder });
+        if (skip !== undefined && skip !== null) {
+            queryParameters = this.addToHttpParams(queryParameters, skip, 'skip');
+        }
+        if (top !== undefined && top !== null) {
+            queryParameters = this.addToHttpParams(queryParameters, top, 'top');
+        }
         if (username !== undefined && username !== null) {
             queryParameters = this.addToHttpParams(queryParameters, username, 'username');
         }
@@ -394,7 +413,7 @@ class PoolRequestControllerService {
         if (httpHeaderAcceptSelected && httpHeaderAcceptSelected.startsWith('text')) {
             responseType_ = 'text';
         }
-        return this.httpClient.get(`${this.configuration.basePath}/prs/${encodeURIComponent(String(username))}`, {
+        return this.httpClient.get(`${this.configuration.basePath}/prs/${encodeURIComponent(String(skip))}/${encodeURIComponent(String(top))}/${encodeURIComponent(String(username))}`, {
             params: queryParameters,
             responseType: responseType_,
             withCredentials: this.configuration.withCredentials,
